@@ -1,14 +1,15 @@
 import React from 'react';
+import './InputForm.scss';
 
-const InputForm = () => {
+const InputForm = ({ request }) => {
     return(
         <>
-            <form>
+            <form onSubmit={request}>
                 <label>
                 Name: 
-                <input type="text" name="name" />
+                <input type="text" name="name" id="mainInput" />
                 </label>
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Submit" id="button" />
             </form>
         </>
     )
