@@ -1,27 +1,31 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
 }
 
 body {
-    font-family: sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    background: #252525;
-    height: 100%;
-    color: #fff;
+	font-family: sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+	background: #252525;
+	height: 100%;
+	color: #fff;
 }
 
 a {
-    color: #fff;
-    text-decoration: none;
+	color: #fff;
+	text-decoration: none;
 }
 
 p {
-    color: #fff;
+	color: #fff;
+}
+
+img {
+	width: 100%;
 }
