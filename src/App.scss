@@ -11,15 +11,20 @@ body {
 	line-height: 1.6;
 	width: 80%;
 	margin: auto;
-	overflow: hidden;
-	background: #252525;
+	max-width: 1250px;
+	background: #696b65;
 	height: 100%;
 	color: #fff;
+	height: 100%;
 }
 
 a {
 	color: #fff;
 	text-decoration: none;
+}
+
+ul {
+	list-style: none;
 }
 
 p {

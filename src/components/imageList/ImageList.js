@@ -9,6 +9,8 @@ const ImageList = ({ data }) => {
 					<div className="card">
 						<img src={value.userImageURL} alt={value.type}></img>
 						<p>{value.tags}</p>
+						<p>User: {value.user_id}</p>
+						<button>View image</button>
 					</div>
 				))}
 			</div>
