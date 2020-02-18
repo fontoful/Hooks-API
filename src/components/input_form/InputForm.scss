@@ -1,0 +1,34 @@
+form {
+	margin-top: 3rem;
+	font-size: 2rem;
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+
+	input {
+		font-size: 2rem;
+		background: none;
+		color: #fff;
+		border: none;
+	}
+
+	#mainInput {
+		border-bottom: 1px solid #fff;
+		outline: none;
+		margin-left: 0.8rem;
+	}
+
+	#button {
+		background: lightcoral;
+		padding: 0.7rem;
+		border-radius: 0.8rem;
+		transition: 0.4s;
+	}
+
+	#button:hover {
+		transform: translateY(-0.2rem);
+		cursor: pointer;
+	}
+}
