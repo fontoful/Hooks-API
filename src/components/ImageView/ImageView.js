@@ -4,14 +4,12 @@ import "./ImageView.scss";
 
 const ImageView = props => {
 	console.log(props.location.state.value);
-
 	const {
 		userImageURL: image,
 		tags,
 		user: owner,
-		pageURL: URL
+		pageURL
 	} = props.location.state.value;
-
 	return (
 		<div className="imageContainer">
 			<img className="image" src={image} alt={tags}></img>
@@ -20,7 +18,9 @@ const ImageView = props => {
 			</h4>
 			<button className="downloadButton">
 				<span>
-					<a href={URL}>Go to the Download Page</a>
+					<a target="_blank" href={pageURL}>
+						Go to the Download Page
+					</a>
 				</span>
 			</button>
 			<Link to={{ pathname: "/" }}>
