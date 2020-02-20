@@ -3,13 +3,17 @@ import { Link } from "react-router-dom";
 import "./ImageView.scss";
 
 const ImageView = props => {
+	// This prints an object
 	console.log(props.location.state.value);
+
+	// Destructuring the props to later inject them in the return statement
 	const {
 		userImageURL: image,
 		tags,
 		user: owner,
 		pageURL
 	} = props.location.state.value;
+
 	return (
 		<div className="imageContainer">
 			<img className="image" src={image} alt={tags}></img>
@@ -18,9 +22,7 @@ const ImageView = props => {
 			</h4>
 			<button className="downloadButton">
 				<span>
-					<a target="_blank" href={pageURL}>
-						Go to the Download Page
-					</a>
+					<a href={pageURL}>Go to the Download Page</a>
 				</span>
 			</button>
 			<Link to={{ pathname: "/" }}>
